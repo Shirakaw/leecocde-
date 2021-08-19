@@ -1,0 +1,8 @@
+class Solution:
+    def replaceSpace(self, s: str) -> str:
+        esc = []
+        for c in s:
+            if c == " ":
+                esc.append("%20")
+            else: esc.append(c)
+        return "".join(esc)
